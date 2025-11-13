@@ -7,6 +7,8 @@ WORKDIR /app
 # Copy package files
 COPY package*.json ./
 
+ENV HUSKY=0
+
 # Install dependencies
 RUN npm ci --only=production
 
